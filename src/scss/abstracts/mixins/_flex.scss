@@ -1,0 +1,45 @@
+@mixin flex($justify: false, $align: false, $wrap: false, $direction: false) {
+    display: flex;
+
+    @if $justify {
+        justify-content: $justify;
+    }
+
+    @if $align {
+        align-items: $align;
+    }
+
+    @if $wrap {
+        flex-wrap: $wrap;
+    }
+
+    @if $direction {
+        flex-direction: $direction;
+    }
+}
+
+@mixin flex-center($position: false) {
+    @if $position ==hr {
+        @include flex(center);
+    }
+
+    @else if $position ==vr {
+        @include flex($align: center);
+    }
+
+    @else {
+        @include flex(center, center);
+    }
+}
+
+@mixin flex-grid-width($columns: 0, $gap: 0) {
+    $total-gap: calc($gap * ($columns - 1));
+    $grid-width: calc((100% - $total-gap) / $columns);
+    flex: 0 0 $grid-width;
+    max-width: $grid-width;
+}
+
+@mixin flex-width($width) {
+    flex: 0 0 #{$width};
+    max-width: #{$width};
+}

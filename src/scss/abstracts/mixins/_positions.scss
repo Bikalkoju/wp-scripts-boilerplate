@@ -1,0 +1,33 @@
+// Position
+@mixin position($position, $top: false, $right: false, $bottom: false, $left: false) {
+    position: $position;
+
+    @if $top {
+        top: $top;
+    }
+
+    @if $right {
+        right: $right;
+    }
+
+    @if $bottom {
+        bottom: $bottom;
+    }
+
+    @if $left {
+        left: $left;
+    }
+}
+
+@mixin position-reset {
+    position: relative;
+    top: unset;
+    right: unset;
+    bottom: unset;
+    left: unset;
+
+    @supports (inset: 0) {
+        position: relative;
+        inset: unset;
+    }
+}

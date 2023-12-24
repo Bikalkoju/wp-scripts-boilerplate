@@ -1,0 +1,15 @@
+// Fade Show/Hide
+@mixin fade($state, $duration) {
+    @if $state =='show' {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    @else if $state =='hide' {
+        opacity: 0;
+        visibility: 'hidden';
+    }
+
+    transition: $duration opacity ease,
+    $duration visibility ease;
+}

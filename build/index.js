@@ -1,22 +1,6 @@
 /******/ (() => { // webpackBootstrap
 /******/ 	var __webpack_modules__ = ({
 
-/***/ "./src/index.js":
-/*!**********************!*\
-  !*** ./src/index.js ***!
-  \**********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/main.js */ "./src/js/main.js");
-/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_main_js__WEBPACK_IMPORTED_MODULE_0__);
-/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/style.scss */ "./src/scss/style.scss");
-
-
-
-/***/ }),
-
 /***/ "./src/js/main.js":
 /*!************************!*\
   !*** ./src/js/main.js ***!
@@ -31,12 +15,9 @@ __webpack_require__.r(__webpack_exports__);
 /*!*****************************!*\
   !*** ./src/scss/style.scss ***!
   \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+/***/ (() => {
 
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
+throw new Error("Module build failed (from ./node_modules/mini-css-extract-plugin/dist/loader.js):\nHookWebpackError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n  ╷\n2 │ @import 'varaibles/variables';\r\n  │         ^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  src\\scss\\abstracts\\_abstracts.scss 2:9  @import\n  src\\scss\\style.scss 1:9                 root stylesheet\n    at tryRunOrWebpackError (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\HookWebpackError.js:88:9)\n    at __webpack_require_module__ (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5067:12)\n    at __webpack_require__ (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5024:18)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5095:20\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3485:9)\n    at done (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5002:43\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3463:5)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4967:16\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3463:5)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4935:15\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3485:9)\n    at done (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3527:9)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4882:8\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:3361:32\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\HookWebpackError.js:68:3\n    at Hook.eval [as callAsync] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Cache.js:107:20)\n    at ItemCacheFacade.store (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:3361:11\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Cache.js:93:5\n    at Hook.eval [as callAsync] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Cache.js:75:18)\n    at ItemCacheFacade.get (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:3331:9)\n    at codeGen (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4870:11)\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3463:5)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4900:14\n    at processQueue (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n-- inner error --\nError: Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\nSassError: Can't find stylesheet to import.\n  ╷\n2 │ @import 'varaibles/variables';\r\n  │         ^^^^^^^^^^^^^^^^^^^^^\n  ╵\n  src\\scss\\abstracts\\_abstracts.scss 2:9  @import\n  src\\scss\\style.scss 1:9                 root stylesheet\n    at Object.<anonymous> (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!E:\\bikal_dev\\wp-scripts-boilerplate\\src\\scss\\style.scss:1:7)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\javascript\\JavascriptModulesPlugin.js:452:10\n    at Hook.eval [as call] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:19:10), <anonymous>:7:1)\n    at Hook.CALL_DELEGATE [as _call] (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\Hook.js:14:14)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5069:39\n    at tryRunOrWebpackError (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\HookWebpackError.js:83:7)\n    at __webpack_require_module__ (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5067:12)\n    at __webpack_require__ (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5024:18)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5095:20\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3485:9)\n    at done (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3527:9)\n    at Hook.eval [as callAsync] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Hook.CALL_ASYNC_DELEGATE [as _callAsync] (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\Hook.js:18:14)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:5002:43\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3463:5)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4967:16\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3485:9)\n    at timesSync (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3463:5)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4935:15\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3485:9)\n    at done (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3527:9)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4882:8\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:3361:32\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\HookWebpackError.js:68:3\n    at Hook.eval [as callAsync] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:15:1)\n    at Cache.store (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Cache.js:107:20)\n    at ItemCacheFacade.store (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\CacheFacade.js:141:15)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:3361:11\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Cache.js:93:5\n    at Hook.eval [as callAsync] (eval at create (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\tapable\\lib\\HookCodeFactory.js:33:10), <anonymous>:16:1)\n    at Cache.get (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Cache.js:75:18)\n    at ItemCacheFacade.get (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\CacheFacade.js:115:15)\n    at Compilation._codeGenerationModule (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:3331:9)\n    at codeGen (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4870:11)\n    at symbolIterator (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3482:9)\n    at timesSync (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:2297:7)\n    at Object.eachLimit (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\neo-async\\async.js:3463:5)\n    at E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\Compilation.js:4900:14\n    at processQueue (E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\webpack\\lib\\util\\processAsyncTree.js:61:4)\n    at process.processTicksAndRejections (node:internal/process/task_queues:77:11)\n\nGenerated code for E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\css-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[1]!E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\postcss-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[2]!E:\\bikal_dev\\wp-scripts-boilerplate\\node_modules\\sass-loader\\dist\\cjs.js??ruleSet[1].rules[4].use[3]!E:\\bikal_dev\\wp-scripts-boilerplate\\src\\scss\\style.scss\n1 | throw new Error(\"Module build failed (from ./node_modules/sass-loader/dist/cjs.js):\\nSassError: Can't find stylesheet to import.\\n  ╷\\n2 │ @import 'varaibles/variables';\\r\\n  │         ^^^^^^^^^^^^^^^^^^^^^\\n  ╵\\n  src\\\\scss\\\\abstracts\\\\_abstracts.scss 2:9  @import\\n  src\\\\scss\\\\style.scss 1:9                 root stylesheet\");");
 
 /***/ })
 
@@ -66,42 +47,7 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
-/******/ 	// expose the modules object (__webpack_modules__)
-/******/ 	__webpack_require__.m = __webpack_modules__;
-/******/ 	
 /************************************************************************/
-/******/ 	/* webpack/runtime/chunk loaded */
-/******/ 	(() => {
-/******/ 		var deferred = [];
-/******/ 		__webpack_require__.O = (result, chunkIds, fn, priority) => {
-/******/ 			if(chunkIds) {
-/******/ 				priority = priority || 0;
-/******/ 				for(var i = deferred.length; i > 0 && deferred[i - 1][2] > priority; i--) deferred[i] = deferred[i - 1];
-/******/ 				deferred[i] = [chunkIds, fn, priority];
-/******/ 				return;
-/******/ 			}
-/******/ 			var notFulfilled = Infinity;
-/******/ 			for (var i = 0; i < deferred.length; i++) {
-/******/ 				var [chunkIds, fn, priority] = deferred[i];
-/******/ 				var fulfilled = true;
-/******/ 				for (var j = 0; j < chunkIds.length; j++) {
-/******/ 					if ((priority & 1 === 0 || notFulfilled >= priority) && Object.keys(__webpack_require__.O).every((key) => (__webpack_require__.O[key](chunkIds[j])))) {
-/******/ 						chunkIds.splice(j--, 1);
-/******/ 					} else {
-/******/ 						fulfilled = false;
-/******/ 						if(priority < notFulfilled) notFulfilled = priority;
-/******/ 					}
-/******/ 				}
-/******/ 				if(fulfilled) {
-/******/ 					deferred.splice(i--, 1)
-/******/ 					var r = fn();
-/******/ 					if (r !== undefined) result = r;
-/******/ 				}
-/******/ 			}
-/******/ 			return result;
-/******/ 		};
-/******/ 	})();
-/******/ 	
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
 /******/ 		// getDefaultExport function for compatibility with non-harmony modules
@@ -142,68 +88,22 @@ __webpack_require__.r(__webpack_exports__);
 /******/ 		};
 /******/ 	})();
 /******/ 	
-/******/ 	/* webpack/runtime/jsonp chunk loading */
-/******/ 	(() => {
-/******/ 		// no baseURI
-/******/ 		
-/******/ 		// object to store loaded and loading chunks
-/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
-/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
-/******/ 		var installedChunks = {
-/******/ 			"index": 0,
-/******/ 			"./style-index": 0
-/******/ 		};
-/******/ 		
-/******/ 		// no chunk on demand loading
-/******/ 		
-/******/ 		// no prefetching
-/******/ 		
-/******/ 		// no preloaded
-/******/ 		
-/******/ 		// no HMR
-/******/ 		
-/******/ 		// no HMR manifest
-/******/ 		
-/******/ 		__webpack_require__.O.j = (chunkId) => (installedChunks[chunkId] === 0);
-/******/ 		
-/******/ 		// install a JSONP callback for chunk loading
-/******/ 		var webpackJsonpCallback = (parentChunkLoadingFunction, data) => {
-/******/ 			var [chunkIds, moreModules, runtime] = data;
-/******/ 			// add "moreModules" to the modules object,
-/******/ 			// then flag all "chunkIds" as loaded and fire callback
-/******/ 			var moduleId, chunkId, i = 0;
-/******/ 			if(chunkIds.some((id) => (installedChunks[id] !== 0))) {
-/******/ 				for(moduleId in moreModules) {
-/******/ 					if(__webpack_require__.o(moreModules, moduleId)) {
-/******/ 						__webpack_require__.m[moduleId] = moreModules[moduleId];
-/******/ 					}
-/******/ 				}
-/******/ 				if(runtime) var result = runtime(__webpack_require__);
-/******/ 			}
-/******/ 			if(parentChunkLoadingFunction) parentChunkLoadingFunction(data);
-/******/ 			for(;i < chunkIds.length; i++) {
-/******/ 				chunkId = chunkIds[i];
-/******/ 				if(__webpack_require__.o(installedChunks, chunkId) && installedChunks[chunkId]) {
-/******/ 					installedChunks[chunkId][0]();
-/******/ 				}
-/******/ 				installedChunks[chunkId] = 0;
-/******/ 			}
-/******/ 			return __webpack_require__.O(result);
-/******/ 		}
-/******/ 		
-/******/ 		var chunkLoadingGlobal = globalThis["webpackChunkwp_scripts_boilerplate"] = globalThis["webpackChunkwp_scripts_boilerplate"] || [];
-/******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
-/******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
-/******/ 	})();
-/******/ 	
 /************************************************************************/
-/******/ 	
-/******/ 	// startup
-/******/ 	// Load entry module and return exports
-/******/ 	// This entry module depends on other loaded chunks and execution need to be delayed
-/******/ 	var __webpack_exports__ = __webpack_require__.O(undefined, ["./style-index"], () => (__webpack_require__("./src/index.js")))
-/******/ 	__webpack_exports__ = __webpack_require__.O(__webpack_exports__);
-/******/ 	
+var __webpack_exports__ = {};
+// This entry need to be wrapped in an IIFE because it need to be in strict mode.
+(() => {
+"use strict";
+/*!**********************!*\
+  !*** ./src/index.js ***!
+  \**********************/
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./js/main.js */ "./src/js/main.js");
+/* harmony import */ var _js_main_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_js_main_js__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./scss/style.scss */ "./src/scss/style.scss");
+
+
+})();
+
 /******/ })()
 ;
 //# sourceMappingURL=index.js.map
