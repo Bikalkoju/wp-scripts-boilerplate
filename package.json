@@ -1,0 +1,28 @@
+{
+  "name": "wp-scripts-boilerplate",
+  "version": "1.0.0",
+  "description": "This is a task runner boilerplate to compile JS and SCSS using wordpress scritps i.e wp-scripts.",
+  "main": "index.js",
+  "scripts": {
+    "start": "wp-scripts start",
+    "build": "wp-scripts build",
+    "format": "wp-scripts format",
+    "lint": "wp-scripts lint",
+    "lint:js": "wp-scripts lint-js"
+  },
+  "keywords": [
+    "wordpress",
+    "@wordpress/scripts",
+    "wordpress",
+    "themes",
+    "php",
+    "js",
+    "scss",
+    "css"
+  ],
+  "author": "Bikal Koju",
+  "license": "ISC",
+  "devDependencies": {
+    "@wordpress/scripts": "^26.19.0"
+  }
+}
