@@ -1,4 +1,4 @@
-@use 'sass:string';
+@use "sass:string";
 
 /**
 * Font Family Mixin
@@ -7,40 +7,64 @@
 * @include font-family('Roboto', '../fonts/Roboto', 400, (woff2, woff, ttf, otf, eot, svg));
 */
 @mixin font-family($name, $path, $weight, $types) {
-    $url: '';
+  $url: "";
 
-    @each $type in $types {
-        @if $type =='woff2' {
-            $url: $url + 'url("#{$path}.#{$type}") format("woff2"), ';
-        }
-
-        @else if $type =='woff' {
-            $url: $url + 'url("#{$path}.#{$type}") format("woff"), ';
-        }
-
-        @else if $type =='ttf' {
-            $url: $url + 'url("#{$path}.#{$type}") format("truetype"), ';
-        }
-
-        @else if $type =='otf' {
-            $url: $url + 'url("#{$path}.#{$type}") format("opentype"), ';
-        }
-
-        @else if $type =='eot' {
-            $url: $url + 'url("#{$path}.#{$type}") format("embedded-opentype"), ';
-        }
-
-        @else if $type =='svg' {
-            $url: $url + 'url("#{$path}.#{$type}") format("svg"), ';
-        }
+  @each $type in $types {
+    @if $type == "woff2" {
+      $url: $url + 'url("#{$path}.#{$type}") format("woff2"), ';
+    } @else if $type == "woff" {
+      $url: $url + 'url("#{$path}.#{$type}") format("woff"), ';
+    } @else if $type == "ttf" {
+      $url: $url + 'url("#{$path}.#{$type}") format("truetype"), ';
+    } @else if $type == "otf" {
+      $url: $url + 'url("#{$path}.#{$type}") format("opentype"), ';
+    } @else if $type == "eot" {
+      $url: $url + 'url("#{$path}.#{$type}") format("embedded-opentype"), ';
+    } @else if $type == "svg" {
+      $url: $url + 'url("#{$path}.#{$type}") format("svg"), ';
     }
+  }
 
-    $url: string.slice($url, 0, -1);
+  $url: string.slice($url, 0, -1);
 
-    @font-face {
-        font-family: $name;
-        src: $url;
-        font-weight: $weight;
-        font-style: normal;
+  @font-face {
+    font-family: $name;
+    src: $url;
+    font-weight: $weight;
+    font-style: normal;
+  }
+}
+
+@mixin font($properties) {
+  @each $selector, $font-breakpoints in $properties {
+    #{$selector} {
+      @each $point, $props in $font-breakpoints {
+        @if $point == "null" {
+          @include font-props($props);
+        } @else {
+          @include breakpoint($point) {
+            @include font-props($props);
+          }
+        }
+      }
     }
+  }
+}
+
+@mixin font-props($props) {
+  @each $key, $value in $props {
+    @if $key == "size" {
+      font-size: $value;
+    } @else if $key == "height" {
+      line-height: $value;
+    } @else if $key == "weight" {
+      font-weight: $value;
+    } @else if $key == "family" {
+      font-family: $value;
+    } @else if $key == "color" {
+      color: $value;
+    } @else if $key == "spacing" {
+      letter-spacing: $value;
+    }
+  }
 }

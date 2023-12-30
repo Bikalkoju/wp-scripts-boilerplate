@@ -1,0 +1,23 @@
+$font-properties: (
+  "body": (
+    "null": (
+      size: 16px,
+      height: 1.4,
+      weight: 400,
+      family: $font__primary,
+      color: $color__black,
+      spacing: 0.05em,
+    ),
+    "small": (
+      size: 14px,
+      spacing: 0,
+    ),
+  ),
+  "h1": (
+    "null": (
+      size: 48px,
+    ),
+  ),
+);
+
+@include font($font-properties);
