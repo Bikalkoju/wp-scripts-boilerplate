@@ -1,0 +1,46 @@
+@use 'sass:string';
+
+/**
+* Font Family Mixin
+* 
+* @example
+* @include font-family('Roboto', '../fonts/Roboto', 400, (woff2, woff, ttf, otf, eot, svg));
+*/
+@mixin font-family($name, $path, $weight, $types) {
+    $url: '';
+
+    @each $type in $types {
+        @if $type =='woff2' {
+            $url: $url + 'url("#{$path}.#{$type}") format("woff2"), ';
+        }
+
+        @else if $type =='woff' {
+            $url: $url + 'url("#{$path}.#{$type}") format("woff"), ';
+        }
+
+        @else if $type =='ttf' {
+            $url: $url + 'url("#{$path}.#{$type}") format("truetype"), ';
+        }
+
+        @else if $type =='otf' {
+            $url: $url + 'url("#{$path}.#{$type}") format("opentype"), ';
+        }
+
+        @else if $type =='eot' {
+            $url: $url + 'url("#{$path}.#{$type}") format("embedded-opentype"), ';
+        }
+
+        @else if $type =='svg' {
+            $url: $url + 'url("#{$path}.#{$type}") format("svg"), ';
+        }
+    }
+
+    $url: string.slice($url, 0, -1);
+
+    @font-face {
+        font-family: $name;
+        src: $url;
+        font-weight: $weight;
+        font-style: normal;
+    }
+}

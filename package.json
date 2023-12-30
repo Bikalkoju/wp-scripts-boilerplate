@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "This is a task runner boilerplate to compile JS and SCSS using wordpress scritps i.e wp-scripts.",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Bikalkoju/wp-scripts-boilerplate"
+  },
   "scripts": {
     "start": "wp-scripts start",
     "build": "wp-scripts build",
